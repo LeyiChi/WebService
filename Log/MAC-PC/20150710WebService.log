@@ -1,0 +1,77 @@
+2015/07/10 13:55:50	MAC-PC    	127.0.0.1       	ERR	Ps.LabTest.GetLabTestList                                   	数据库操作异常！ error information : Numeric value out of range
+   at InterSystems.Data.CacheClient.ListUtil.dblint(Int32 scale, Int64 num)
+   at InterSystems.Data.CacheClient.SysList.getInt()
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsLabTest.GetLabTestList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsLabTest.cs:line 182
+2015/07/10 13:55:55	MAC-PC    	127.0.0.1       	ERR	GetLabTestList                                              	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 3888
+2015/07/10 14:08:14	MAC-PC    	127.0.0.1       	ERR	Ps.LabTest.GetLabTestList                                   	数据库操作异常！ error information : Numeric value out of range
+   at InterSystems.Data.CacheClient.ListUtil.dblint(Int32 scale, Int64 num)
+   at InterSystems.Data.CacheClient.SysList.getInt()
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsLabTest.GetLabTestList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsLabTest.cs:line 182
+2015/07/10 14:08:15	MAC-PC    	127.0.0.1       	ERR	GetLabTestList                                              	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 3888
+2015/07/10 14:11:54	MAC-PC    	127.0.0.1       	ERR	Ps.LabTest.GetLabTestList                                   	数据库操作异常！ error information : Numeric value out of range
+   at InterSystems.Data.CacheClient.ListUtil.dblint(Int32 scale, Int64 num)
+   at InterSystems.Data.CacheClient.SysList.getInt()
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsLabTest.GetLabTestList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsLabTest.cs:line 182
+2015/07/10 14:11:54	MAC-PC    	127.0.0.1       	ERR	GetLabTestList                                              	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 3888
+2015/07/10 14:18:13	MAC-PC    	127.0.0.1       	ERR	Ps.LabTest.GetLabTestList                                   	数据库操作异常！ error information : Numeric value out of range
+   at InterSystems.Data.CacheClient.ListUtil.dblint(Int32 scale, Int64 num)
+   at InterSystems.Data.CacheClient.SysList.getInt()
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsLabTest.GetLabTestList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsLabTest.cs:line 182
+2015/07/10 14:18:13	MAC-PC    	127.0.0.1       	ERR	GetLabTestList                                              	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 3888
+2015/07/10 14:22:07	MAC-PC    	127.0.0.1       	ERR	Ps.LabTest.GetLabTestList                                   	数据库操作异常！ error information : Numeric value out of range
+   at InterSystems.Data.CacheClient.ListUtil.dblint(Int32 scale, Int64 num)
+   at InterSystems.Data.CacheClient.SysList.getInt()
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsLabTest.GetLabTestList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsLabTest.cs:line 182
+2015/07/10 14:22:08	MAC-PC    	127.0.0.1       	ERR	GetLabTestList                                              	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 3888
+2015/07/10 14:24:19	MAC-PC    	127.0.0.1       	ERR	Ps.LabTest.GetLabTestList                                   	数据库操作异常！ error information : Numeric value out of range
+   at InterSystems.Data.CacheClient.ListUtil.dblint(Int32 scale, Int64 num)
+   at InterSystems.Data.CacheClient.SysList.getInt()
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsLabTest.GetLabTestList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsLabTest.cs:line 182
+2015/07/10 14:24:19	MAC-PC    	127.0.0.1       	ERR	GetLabTestList                                              	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 3888
+2015/07/10 14:37:02	MAC-PC    	127.0.0.1       	ERR	Ps.LabTest.GetLabTestList                                   	数据库操作异常！ error information : Numeric value out of range
+   at InterSystems.Data.CacheClient.ListUtil.dblint(Int32 scale, Int64 num)
+   at InterSystems.Data.CacheClient.SysList.getInt()
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsLabTest.GetLabTestList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsLabTest.cs:line 182
+2015/07/10 14:37:02	MAC-PC    	127.0.0.1       	ERR	GetLabTestList                                              	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 3888

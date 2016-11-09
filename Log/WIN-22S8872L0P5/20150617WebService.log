@@ -1,0 +1,5 @@
+2015/06/17 15:48:53	WIN-22S887	127.0.0.1       	ERR	GetBPDetailByPeriod                                         	WebService调用异常！ error information : Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at WebService.Services.GetBPDetailByPeriod(String PatientId, String ItemType, Int32 StartDate, Int32 EndDate) in D:\Project\WebService-20150615（最新）\WebService\Services.asmx.cs:line 9077

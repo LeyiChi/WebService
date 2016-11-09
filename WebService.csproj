@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28F51066-1C0F-44E8-96F1-D5245140BFD3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebService</RootNamespace>
+    <AssemblyName>WebService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cache.Cm.CommonLibrary, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstAuthority, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstAuthority.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstBloodPressure, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstBloodPressure.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstDevice, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstDevice.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstDiabetesDrug, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstDiabetesDrug.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstDiagnosis, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstDiagnosis.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstDivision, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstDivision.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstDrug, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstDrug.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstExaminationItem, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstExaminationItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstExaminationSubItem, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstExaminationSubItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstHealthEducation, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstHealthEducation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstHospital, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstHospital.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstHypertensionDrug, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstHypertensionDrug.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstIndicator, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstIndicator.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstIndicatorParameter, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstIndicatorParameter.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstInfoItem, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstInfoItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstInfoItemCategory, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstInfoItemCategory.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstInsurance, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstInsurance.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstLabTestItems, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstLabTestItems.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstLabTestSubItems, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstLabTestSubItems.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstLifeStyle, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstLifeStyle.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstLipidDrug, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstLipidDrug.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstNumbering, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstNumbering.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstOperation, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstOperation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstRole, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstRole.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstSymptoms, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstSymptoms.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstTask, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstTreatment, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstTreatment.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstType, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstType.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstUricAcidReductionDrug, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstUricAcidReductionDrug.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstUser, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstUser.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.MstVitalSigns, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.MstVitalSigns.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Cm.Role2Authority, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Cm.Role2Authority.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mb.MessageRecord, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mb.MessageRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.DiagnosisCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.DiagnosisCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.DivisionCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.DivisionCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.DrugCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.DrugCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.ExaminationCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.ExaminationCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.ExaminationItemCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.ExaminationItemCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.LabSubItemsCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.LabSubItemsCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.LabTestItemsCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.LabTestItemsCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.OperationCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.OperationCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Mp.VitalSignsCmp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Mp.VitalSignsCmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.BasicInfo, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.BasicInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.ClinicalInfo, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.ClinicalInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Compliance, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Compliance.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Diagnosis, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Diagnosis.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.DoctorInfo, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.DoctorInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.DrugRecord, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.DrugRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Examination, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Examination.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.InPatientInfo, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.InPatientInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.LabTest, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.LabTest.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.OutPatientInfo, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.OutPatientInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Patient2VS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Patient2VS.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Plan, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Plan.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Reminder, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Reminder.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.RoleMatch, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.RoleMatch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.SpecialList, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.SpecialList.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Symptoms, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Symptoms.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.TaskList, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.TaskList.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.Treatment, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.Treatment.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.TreatmentIndicators, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.TreatmentIndicators.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.VisitIdMatch, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.VisitIdMatch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Ps.VitalSigns, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Ps.VitalSigns.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.DiagnosisDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.DiagnosisDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.DivisionDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.DivisionDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.DrugDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.DrugDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.ExamDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.ExamDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.ExaminationItemDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.ExaminationItemDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.LabItemDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.LabItemDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.LabResultDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.LabResultDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Tmp.OperationDict, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Tmp.OperationDict.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Wn.MstBasicAlert, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Wn.MstBasicAlert.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Wn.MstPersonalAlert, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Wn.MstPersonalAlert.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Wn.TrnAlertRecord, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Cache.Wn.TrnAlertRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Hygeia.CacheLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Hygeia.CacheLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Hygeia.CommonLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Hygeia.CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="InterSystems.Data.CacheClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=ad350a26c4a4447c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\InterSystems.Data.CacheClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RongYunClassLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RongYunClassLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonLibrary\HygeiaComUtility.cs" />
+    <Compile Include="CommonLibrary\HygeiaConst.cs" />
+    <Compile Include="CommonLibrary\HygeiaEnum.cs" />
+    <Compile Include="CommonLibrary\TextLog.cs" />
+    <Compile Include="DataClass\BPGrade.cs" />
+    <Compile Include="DataClass\ClinicInfo.cs" />
+    <Compile Include="DataClass\CompliacneInfo.cs" />
+    <Compile Include="DataClass\Implementation.cs" />
+    <Compile Include="DataClass\JSONHelper.cs" />
+    <Compile Include="DataClass\MessageDetail.cs" />
+    <Compile Include="DataClass\MstVitalSigns.cs" />
+    <Compile Include="DataClass\PatientInfo.cs" />
+    <Compile Include="DataClass\PersonalHomePage.cs" />
+    <Compile Include="DataClass\PlanInfo.cs" />
+    <Compile Include="DataClass\WnMstAlert.cs" />
+    <Compile Include="DataMethod\CmMstAuthority.cs" />
+    <Compile Include="DataMethod\CmMstAuthorityDetail.cs" />
+    <Compile Include="DataMethod\CmMstBloodPressure.cs" />
+    <Compile Include="DataMethod\CmMstDevice.cs" />
+    <Compile Include="DataMethod\CmMstDiabetesDrug.cs" />
+    <Compile Include="DataMethod\CmMstDiagnosis.cs" />
+    <Compile Include="DataMethod\CmMstDivision.cs" />
+    <Compile Include="DataMethod\CmMstDrug.cs" />
+    <Compile Include="DataMethod\CmMstDrugDetail.cs" />
+    <Compile Include="DataMethod\CmMstExaminationItem.cs" />
+    <Compile Include="DataMethod\CmMstExaminationSubItem.cs" />
+    <Compile Include="DataMethod\CmMstHealthEducation.cs" />
+    <Compile Include="DataMethod\CmMstHospital.cs" />
+    <Compile Include="DataMethod\CmMstHypertensionDrug.cs" />
+    <Compile Include="DataMethod\CmMstIndicator.cs" />
+    <Compile Include="DataMethod\CmMstIndicatorParameter.cs" />
+    <Compile Include="DataMethod\CmMstInfoItem.cs" />
+    <Compile Include="DataMethod\CmMstInfoItemCategory.cs" />
+    <Compile Include="DataMethod\CmMstInsurance.cs" />
+    <Compile Include="DataMethod\CmMstLabTestItems.cs" />
+    <Compile Include="DataMethod\CmMstLabTestSubItems.cs" />
+    <Compile Include="DataMethod\CmMstLifeStyle.cs" />
+    <Compile Include="DataMethod\CmMstLifeStyleDetail.cs" />
+    <Compile Include="DataMethod\CmMstLipidDrug.cs" />
+    <Compile Include="DataMethod\CmMstNumbering.cs" />
+    <Compile Include="DataMethod\CmMstOperation.cs" />
+    <Compile Include="DataMethod\CmMstRole.cs" />
+    <Compile Include="DataMethod\CmMstSymptoms.cs" />
+    <Compile Include="DataMethod\CmMstTask.cs" />
+    <Compile Include="DataMethod\CmMstTreatment.cs" />
+    <Compile Include="DataMethod\CmMstType.cs" />
+    <Compile Include="DataMethod\CmMstUricAcidReductionDrug.cs" />
+    <Compile Include="DataMethod\CmMstUser.cs" />
+    <Compile Include="DataMethod\CmMstUserDetail.cs" />
+    <Compile Include="DataMethod\CmMstVitalSigns.cs" />
+    <Compile Include="DataMethod\CmRole2Authority.cs" />
+    <Compile Include="CommonLibrary\DataConnection.cs" />
+    <Compile Include="CommonLibrary\Configuration.cs" />
+    <Compile Include="DataMethod\MethodConst.cs" />
+    <Compile Include="DataMethod\MpDiagnosisCmp.cs" />
+    <Compile Include="DataMethod\MpDivisionCmp.cs" />
+    <Compile Include="DataMethod\MpDrugCmp.cs" />
+    <Compile Include="DataMethod\MpExaminationCmp.cs" />
+    <Compile Include="DataMethod\MpExaminationItemCmp.cs" />
+    <Compile Include="DataMethod\MpLabSubItemsCmp.cs" />
+    <Compile Include="DataMethod\MpLabTestItemsCmp.cs" />
+    <Compile Include="DataMethod\MpOperationCmp.cs" />
+    <Compile Include="DataMethod\MpVitalSignsCmp.cs" />
+    <Compile Include="DataMethod\PsCompliance.cs" />
+    <Compile Include="DataMethod\PsComplianceDetail.cs" />
+    <Compile Include="DataMethod\PsInPatientInfo.cs" />
+    <Compile Include="DataMethod\MbMessageRecord.cs" />
+    <Compile Include="DataMethod\PsOutPatientInfo.cs" />
+    <Compile Include="DataMethod\PsBasicInfo.cs" />
+    <Compile Include="DataMethod\PsBasicInfoDetail.cs" />
+    <Compile Include="DataMethod\PsClinicalInfo.cs" />
+    <Compile Include="DataMethod\PsDiagnosis.cs" />
+    <Compile Include="DataMethod\PsDoctorInfo.cs" />
+    <Compile Include="DataMethod\PsDoctorInfoDetail.cs" />
+    <Compile Include="DataMethod\PsDrugRecord.cs" />
+    <Compile Include="DataMethod\PsExamDetails.cs" />
+    <Compile Include="DataMethod\PsExamination.cs" />
+    <Compile Include="DataMethod\PsLabTest.cs" />
+    <Compile Include="DataMethod\PsLabTestDetails.cs" />
+    <Compile Include="DataMethod\PsParameters.cs" />
+    <Compile Include="DataMethod\PsPatient2VS.cs" />
+    <Compile Include="DataMethod\PsPlan.cs" />
+    <Compile Include="DataMethod\PsReminder.cs" />
+    <Compile Include="DataMethod\PsRoleMatch.cs" />
+    <Compile Include="DataMethod\PsSpecialList.cs" />
+    <Compile Include="DataMethod\PsSymptoms.cs" />
+    <Compile Include="DataMethod\PsTarget.cs" />
+    <Compile Include="DataMethod\PsTask.cs" />
+    <Compile Include="DataMethod\PsTaskList.cs" />
+    <Compile Include="DataMethod\PsTreatment.cs" />
+    <Compile Include="DataMethod\PsTreatmentIndicators.cs" />
+    <Compile Include="DataMethod\PsUserIdMatch.cs" />
+    <Compile Include="DataMethod\PsVisitIdMatch.cs" />
+    <Compile Include="DataMethod\PsVitalSigns.cs" />
+    <Compile Include="DataMethod\TmpDiagnosisDict.cs" />
+    <Compile Include="DataMethod\TmpDivisionDict.cs" />
+    <Compile Include="DataMethod\TmpDrugDict.cs" />
+    <Compile Include="DataMethod\TmpExamDict.cs" />
+    <Compile Include="DataMethod\TmpExaminationItemDict.cs" />
+    <Compile Include="DataMethod\TmpLabItemDict.cs" />
+    <Compile Include="DataMethod\TmpLabResultDict.cs" />
+    <Compile Include="DataMethod\TmpOperationDict.cs" />
+    <Compile Include="DataMethod\WnMstBasicAlert.cs" />
+    <Compile Include="DataMethod\WnMstPersonalAlert.cs" />
+    <Compile Include="DataMethod\WnTrnAlertRecord.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.asmx.cs">
+      <DependentUpon>Services.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58895</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

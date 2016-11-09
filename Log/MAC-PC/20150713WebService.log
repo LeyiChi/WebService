@@ -1,0 +1,16 @@
+2015/07/13 09:39:28	MAC-PC    	127.0.0.1       	ERR	                                                            	数据库连接失败！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.13.22.66:1972
+   at InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   at InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   at InterSystems.Data.CacheClient.CacheConnection.Open()
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 51
+2015/07/13 09:39:28	MAC-PC    	127.0.0.1       	ERR	PsUserIdMatch.getLatestHUserIdByHCode                       	数据库操作异常！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.13.22.66:1972
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 69
+   at WebService.DataMethod.PsUserIdMatch.getLatestHUserIdByHCode(DataConnection pclsCache, String UserId, String HospitalCode) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsUserIdMatch.cs:line 46
+2015/07/13 09:39:30	MAC-PC    	127.0.0.1       	ERR	                                                            	数据库连接失败！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.13.22.66:1972
+   at InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   at InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   at InterSystems.Data.CacheClient.CacheConnection.Open()
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 51
+2015/07/13 09:39:30	MAC-PC    	127.0.0.1       	ERR	PsUserIdMatch.getLatestHUserIdByHCode                       	数据库操作异常！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.13.22.66:1972
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 69
+   at WebService.DataMethod.PsUserIdMatch.getLatestHUserIdByHCode(DataConnection pclsCache, String UserId, String HospitalCode) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsUserIdMatch.cs:line 46

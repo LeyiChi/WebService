@@ -1,0 +1,72 @@
+2015/07/15 13:20:52	MAC-PC    	127.0.0.1       	ERR	Ps.DrugRecord.GetDrugRecordList                             	数据库操作异常！ error information : [SQLCODE: <-400>:<Fatal error occurred>]
+[Cache Error: <<SUBSCRIPT>GetName+10^Cm.MstDrug ^Cm.MstDrugD("DRUG01","")>]
+[Location: <SPFetch>]
+   at InterSystems.Data.CacheClient.InStream.readHeader(Int32 stmt_id, Int32 type, Int32 allowError)
+   at InterSystems.Data.CacheClient.CacheDataReader.fetchMoreData()
+   at InterSystems.Data.CacheClient.CacheDataReader.checkAndPosition(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsDrugRecord.GetDrugRecordList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsDrugRecord.cs:line 87
+2015/07/15 13:20:53	MAC-PC    	127.0.0.1       	ERR	GetDrugRecordList                                           	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetDrugRecordList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 4275
+2015/07/15 13:22:19	MAC-PC    	127.0.0.1       	ERR	Ps.DrugRecord.GetDrugRecordList                             	数据库操作异常！ error information : [SQLCODE: <-400>:<Fatal error occurred>]
+[Cache Error: <<SUBSCRIPT>GetName+10^Cm.MstDrug ^Cm.MstDrugD("DRUG01","")>]
+[Location: <SPFetch>]
+   at InterSystems.Data.CacheClient.InStream.readHeader(Int32 stmt_id, Int32 type, Int32 allowError)
+   at InterSystems.Data.CacheClient.CacheDataReader.fetchMoreData()
+   at InterSystems.Data.CacheClient.CacheDataReader.checkAndPosition(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.GetValue(Int32 i)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.PsDrugRecord.GetDrugRecordList(DataConnection pclsCache, String piUserId, String piVisitId) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsDrugRecord.cs:line 87
+2015/07/15 13:22:19	MAC-PC    	127.0.0.1       	ERR	GetDrugRecordList                                           	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetDrugRecordList(String UserId, String VisitId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 4275
+2015/07/15 13:40:57	MAC-PC    	127.0.0.1       	ERR	CmMstLabTestSubItems.GetNameList                            	数据库操作异常！ error information : Column does not exist: CodeSubCode
+   at InterSystems.Data.CacheClient.CacheDataReader.GetOrdinal(String columnName)
+   at InterSystems.Data.CacheClient.CacheDataReader.get_Item(String value)
+   at WebService.DataMethod.CmMstLabTestSubItems.GetNameList(DataConnection pclsCache) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\CmMstLabTestSubItems.cs:line 197
+2015/07/15 13:40:57	MAC-PC    	127.0.0.1       	ERR	GetLabTestSubItemNameList                                   	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestSubItemNameList() in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 4543
+2015/07/15 18:22:29	MAC-PC    	127.0.0.1       	ERR	                                                            	数据库连接失败！ error information : Bad socket option: 在一个非套接字上尝试了一个操作。
+   at InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   at InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   at InterSystems.Data.CacheClient.CacheConnection.Open()
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 51
+2015/07/15 18:22:29	MAC-PC    	127.0.0.1       	ERR	Ps.VitalSigns.GetLatestPatientVitalSigns                    	数据库操作异常！ error information : Bad socket option: 在一个非套接字上尝试了一个操作。
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 69
+   at WebService.DataMethod.PsVitalSigns.GetLatestPatientVitalSigns(DataConnection pclsCache, String UserId, String ItemType, String ItemCode) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsVitalSigns.cs:line 371
+2015/07/15 18:22:29	MAC-PC    	127.0.0.1       	ERR	GetRiskInput                                                	WebService调用异常！ error information : Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at WebService.Services.GetRiskInput(String UserId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 7632
+2015/07/15 18:36:25	MAC-PC    	127.0.0.1       	ERR	GetRiskInput                                                	WebService调用异常！ error information : Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at WebService.Services.GetRiskInput(String UserId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 7612
+2015/07/15 18:48:30	MAC-PC    	127.0.0.1       	ERR	GetRiskInput                                                	WebService调用异常！ error information : Input string was not in a correct format.
+   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToDouble(String value)
+   at WebService.Services.GetRiskInput(String UserId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 7804
+2015/07/15 18:51:00	MAC-PC    	127.0.0.1       	ERR	                                                            	数据库连接失败！ error information : Communication error: Unable to read data from the transport connection: 您的主机中的软件中止了一个已建立的连接。.
+   at InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   at InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   at InterSystems.Data.CacheClient.CacheConnection.Open()
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 51
+2015/07/15 18:51:00	MAC-PC    	127.0.0.1       	ERR	PsBasicInfoDetail.GetValue                                  	数据库操作异常！ error information : Communication error: Unable to read data from the transport connection: 您的主机中的软件中止了一个已建立的连接。.
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 69
+   at WebService.DataMethod.PsBasicInfoDetail.GetValue(DataConnection pclsCache, String UserId, String CategoryCode, String ItemCode, Int32 ItemSeq) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsBasicInfoDetail.cs:line 496
+2015/07/15 18:51:00	MAC-PC    	127.0.0.1       	ERR	GetRiskInput                                                	WebService调用异常！ error information : Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at WebService.Services.GetRiskInput(String UserId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 7656

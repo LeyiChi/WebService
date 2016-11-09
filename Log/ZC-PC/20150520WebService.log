@@ -1,0 +1,22 @@
+2015/05/20 21:39:37	zc-PC     	::1             	ERR	Cm.MstHealthEducation.GetAddressByType                      	数据库操作异常！ error information : [SQLCODE: <-428>:<Stored procedure not found>]
+[Location: <SPPrepare>]
+[%msg: <Procedure named CM.MSTHEALTHEDUCATION_GETADDRESSBYTYPE does not exist>]
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReaderObject(CommandBehavior behavior, String method)
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReader()
+   在 WebService.DataMethod.CmMstHealthEducation.GetAddressByType(DataConnection pclsCache, String Module, Int32 Type) 位置 D:\实验室\慢病管理\WebService\WebService\DataMethod\CmMstHealthEducation.cs:行号 268
+2015/05/20 21:39:37	zc-PC     	::1             	ERR	GetAddressByTypeList                                        	WebService调用异常！ error information : “table”参数不能为空。
+参数名: table
+   在 System.Data.DataTableCollection.BaseAdd(DataTable table)
+   在 System.Data.DataTableCollection.Add(DataTable table)
+   在 WebService.Services.GetAddressByTypeList(String Module, Int32 Type) 位置 D:\实验室\慢病管理\WebService\WebService\Services.asmx.cs:行号 9980
+2015/05/20 21:40:43	zc-PC     	::1             	ERR	Cm.MstHealthEducation.GetAddressByType                      	数据库操作异常！ error information : [SQLCODE: <-428>:<Stored procedure not found>]
+[Location: <SPPrepare>]
+[%msg: <Procedure named CM.MSTHEALTHEDUCATION_GETADDRESSBYTYPE does not exist>]
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReaderObject(CommandBehavior behavior, String method)
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReader()
+   在 WebService.DataMethod.CmMstHealthEducation.GetAddressByType(DataConnection pclsCache, String Module, Int32 Type) 位置 D:\实验室\慢病管理\WebService\WebService\DataMethod\CmMstHealthEducation.cs:行号 268
+2015/05/20 21:40:43	zc-PC     	::1             	ERR	GetAddressByTypeList                                        	WebService调用异常！ error information : “table”参数不能为空。
+参数名: table
+   在 System.Data.DataTableCollection.BaseAdd(DataTable table)
+   在 System.Data.DataTableCollection.Add(DataTable table)
+   在 WebService.Services.GetAddressByTypeList(String Module, Int32 Type) 位置 D:\实验室\慢病管理\WebService\WebService\Services.asmx.cs:行号 9980

@@ -1,0 +1,20 @@
+2015/05/19 20:39:05	zc-PC     	::1             	ERR	                                                            	数据库连接失败！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.12.43.53:56774
+   在 InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   在 InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   在 InterSystems.Data.CacheClient.CacheConnection.Open()
+   在 WebService.CommonLibrary.DataConnection.Connect() 位置 D:\实验室\慢病管理\WebService\WebService\CommonLibrary\DataConnection.cs:行号 24
+2015/05/19 20:39:06	zc-PC     	::1             	ERR	Ps.DrugRecord.GetPsDrugRecord                               	数据库操作异常！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.12.43.53:56774
+   在 WebService.CommonLibrary.DataConnection.Connect() 位置 D:\实验室\慢病管理\WebService\WebService\CommonLibrary\DataConnection.cs:行号 30
+   在 WebService.DataMethod.PsDrugRecord.GetPsDrugRecord(DataConnection pclsCache, String piUserId, String Module) 位置 D:\实验室\慢病管理\WebService\WebService\DataMethod\PsDrugRecord.cs:行号 353
+2015/05/19 20:39:06	zc-PC     	::1             	ERR	GetPatientDrugRecord                                        	WebService调用异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.Services.GetPatientDrugRecord(String PatientId, String Module) 位置 D:\实验室\慢病管理\WebService\WebService\Services.asmx.cs:行号 6959
+2015/05/19 20:39:38	zc-PC     	::1             	ERR	                                                            	数据库连接失败！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.12.43.53:56774
+   在 InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   在 InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   在 InterSystems.Data.CacheClient.CacheConnection.Open()
+   在 WebService.CommonLibrary.DataConnection.Connect() 位置 D:\实验室\慢病管理\WebService\WebService\CommonLibrary\DataConnection.cs:行号 24
+2015/05/19 20:39:38	zc-PC     	::1             	ERR	Ps.DrugRecord.GetPsDrugRecord                               	数据库操作异常！ error information : [CacheProvider] Communication link failure: System.Net.Sockets.SocketException; 由于目标计算机积极拒绝，无法连接。 10.12.43.53:56774
+   在 WebService.CommonLibrary.DataConnection.Connect() 位置 D:\实验室\慢病管理\WebService\WebService\CommonLibrary\DataConnection.cs:行号 30
+   在 WebService.DataMethod.PsDrugRecord.GetPsDrugRecord(DataConnection pclsCache, String piUserId, String Module) 位置 D:\实验室\慢病管理\WebService\WebService\DataMethod\PsDrugRecord.cs:行号 353
+2015/05/19 20:39:38	zc-PC     	::1             	ERR	GetPatientDrugRecord                                        	WebService调用异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.Services.GetPatientDrugRecord(String PatientId, String Module) 位置 D:\实验室\慢病管理\WebService\WebService\Services.asmx.cs:行号 6959

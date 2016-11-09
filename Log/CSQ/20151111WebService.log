@@ -1,0 +1,68 @@
+2015/11/11 13:48:45	ads.ak.fac	127.0.0.1       	ERR	Ps.Compliance.GetComplianceByDay                            	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetComplianceByDay,Ps.Compliance
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Compliance.GetComplianceByDay(CacheConnection conn, String PatientId, Nullable`1 Date, String PlanNo)
+   在 WebService.DataMethod.PsCompliance.GetComplianceByDay(DataConnection pclsCache, String PatientId, Int32 Date, String PlanNo) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsCompliance.cs:行号 51
+2015/11/11 13:48:45	ads.ak.fac	127.0.0.1       	ERR	PsTarget.GetTargetByCode                                    	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetTargetByCode,Ps.Target
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Target.GetTargetByCode(CacheConnection conn, String Plan, String Type, String Code)
+   在 WebService.DataMethod.PsTarget.GetTargetByCode(DataConnection pclsCache, String PlanNo, String Type, String Code) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsTarget.cs:行号 209
+2015/11/11 13:48:46	ads.ak.fac	127.0.0.1       	ERR	Ps.Compliance.GetComplianceByDay                            	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetComplianceByDay,Ps.Compliance
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Compliance.GetComplianceByDay(CacheConnection conn, String PatientId, Nullable`1 Date, String PlanNo)
+   在 WebService.DataMethod.PsCompliance.GetComplianceByDay(DataConnection pclsCache, String PatientId, Int32 Date, String PlanNo) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsCompliance.cs:行号 51
+2015/11/11 13:48:46	ads.ak.fac	127.0.0.1       	ERR	PsTarget.GetTargetByCode                                    	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetTargetByCode,Ps.Target
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Target.GetTargetByCode(CacheConnection conn, String Plan, String Type, String Code)
+   在 WebService.DataMethod.PsTarget.GetTargetByCode(DataConnection pclsCache, String PlanNo, String Type, String Code) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsTarget.cs:行号 209
+2015/11/11 13:48:46	ads.ak.fac	127.0.0.1       	ERR	Ps.Compliance.GetComplianceByDay                            	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetComplianceByDay,Ps.Compliance
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Compliance.GetComplianceByDay(CacheConnection conn, String PatientId, Nullable`1 Date, String PlanNo)
+   在 WebService.DataMethod.PsCompliance.GetComplianceByDay(DataConnection pclsCache, String PatientId, Int32 Date, String PlanNo) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsCompliance.cs:行号 51
+2015/11/11 13:48:46	ads.ak.fac	127.0.0.1       	ERR	PsTarget.GetTargetByCode                                    	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetTargetByCode,Ps.Target
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Target.GetTargetByCode(CacheConnection conn, String Plan, String Type, String Code)
+   在 WebService.DataMethod.PsTarget.GetTargetByCode(DataConnection pclsCache, String PlanNo, String Type, String Code) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsTarget.cs:行号 209
+2015/11/11 13:48:46	ads.ak.fac	127.0.0.1       	ERR	Ps.Compliance.GetComplianceByDay                            	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetComplianceByDay,Ps.Compliance
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Compliance.GetComplianceByDay(CacheConnection conn, String PatientId, Nullable`1 Date, String PlanNo)
+   在 WebService.DataMethod.PsCompliance.GetComplianceByDay(DataConnection pclsCache, String PatientId, Int32 Date, String PlanNo) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsCompliance.cs:行号 51
+2015/11/11 13:48:47	ads.ak.fac	127.0.0.1       	ERR	PsTarget.GetTargetByCode                                    	数据库操作异常！ error information : <METHOD DOES NOT EXIST>runMtdLow+25^%SYS.BINDSRV *GetTargetByCode,Ps.Target
+   在 InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   在 InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   在 InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   在 Ps.Target.GetTargetByCode(CacheConnection conn, String Plan, String Type, String Code)
+   在 WebService.DataMethod.PsTarget.GetTargetByCode(DataConnection pclsCache, String PlanNo, String Type, String Code) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsTarget.cs:行号 209
+2015/11/11 13:55:06	ads.ak.fac	127.0.0.1       	ERR	Ps.DoctorInfoDetail.GetPatientsByDoctorId                   	数据库操作异常！ error information : [SQLCODE: <-400>:<Fatal error occurred>]
+[Cache Error: <<INVALID OREF>GetPatientsByDoctorId+16^Ps.DoctorInfoDetail>]
+[Location: <SPFetch>]
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReaderObject(CommandBehavior behavior, String method)
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReader()
+   在 WebService.DataMethod.PsDoctorInfoDetail.GetPatientsByDoctorId(DataConnection pclsCache, String DoctorId, String CategoryCode) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsDoctorInfoDetail.cs:行号 95
+2015/11/11 13:56:26	ads.ak.fac	127.0.0.1       	ERR	Ps.DoctorInfoDetail.GetPatientsByDoctorId                   	数据库操作异常！ error information : [SQLCODE: <-400>:<Fatal error occurred>]
+[Cache Error: <<INVALID OREF>GetPatientsByDoctorId+16^Ps.DoctorInfoDetail>]
+[Location: <SPFetch>]
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReaderObject(CommandBehavior behavior, String method)
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReader()
+   在 WebService.DataMethod.PsDoctorInfoDetail.GetPatientsByDoctorId(DataConnection pclsCache, String DoctorId, String CategoryCode) 位置 F:\Work\chronic disease management\github\WebService\DataMethod\PsDoctorInfoDetail.cs:行号 95

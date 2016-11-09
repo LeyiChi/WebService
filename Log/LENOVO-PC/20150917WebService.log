@@ -1,0 +1,27 @@
+2015/09/17 16:04:26	Lenovo-PC 	127.0.0.1       	ERR	PsDrugRecord.GetDrugRecordList                              	数据库操作异常！ error information : 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 WebService.DataMethod.PsDrugRecord.GetDrugRecord(DataConnection pclsCache, String piUserId, String piVisitId) 位置 C:\慢病管理\github\WebService\DataMethod\PsDrugRecord.cs:行号 399
+2015/09/17 16:04:26	Lenovo-PC 	127.0.0.1       	ERR	PsClinicalInfo.GetClinicalInfo                              	数据库操作异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.DataMethod.PsClinicalInfo.GetOtherTable(DataConnection pclsCache, String UserId, String VisitId) 位置 C:\慢病管理\github\WebService\DataMethod\PsClinicalInfo.cs:行号 471
+2015/09/17 16:04:46	Lenovo-PC 	127.0.0.1       	ERR	GetReminder                                                 	WebService调用异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.Services.GetClinicalNew(String UserId, DateTime AdmissionDate, DateTime ClinicDate, Int32 Num) 位置 C:\慢病管理\github\WebService\Services.asmx.cs:行号 6589
+2015/09/17 16:05:26	Lenovo-PC 	127.0.0.1       	ERR	PsDrugRecord.GetDrugRecordList                              	数据库操作异常！ error information : 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 WebService.DataMethod.PsDrugRecord.GetDrugRecord(DataConnection pclsCache, String piUserId, String piVisitId) 位置 C:\慢病管理\github\WebService\DataMethod\PsDrugRecord.cs:行号 399
+2015/09/17 16:05:26	Lenovo-PC 	127.0.0.1       	ERR	PsClinicalInfo.GetClinicalInfo                              	数据库操作异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.DataMethod.PsClinicalInfo.GetOtherTable(DataConnection pclsCache, String UserId, String VisitId) 位置 C:\慢病管理\github\WebService\DataMethod\PsClinicalInfo.cs:行号 471
+2015/09/17 16:11:24	Lenovo-PC 	127.0.0.1       	ERR	GetReminder                                                 	WebService调用异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.Services.GetClinicalNew(String UserId, DateTime AdmissionDate, DateTime ClinicDate, Int32 Num) 位置 C:\慢病管理\github\WebService\Services.asmx.cs:行号 6589
+2015/09/17 16:31:21	Lenovo-PC 	127.0.0.1       	ERR	PsDrugRecord.GetDrugRecordList                              	数据库操作异常！ error information : 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 WebService.DataMethod.PsDrugRecord.GetDrugRecord(DataConnection pclsCache, String piUserId, String piVisitId) 位置 C:\慢病管理\github\WebService\DataMethod\PsDrugRecord.cs:行号 399
+2015/09/17 16:31:21	Lenovo-PC 	127.0.0.1       	ERR	PsClinicalInfo.GetClinicalInfo                              	数据库操作异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.DataMethod.PsClinicalInfo.GetOtherTable(DataConnection pclsCache, String UserId, String VisitId) 位置 C:\慢病管理\github\WebService\DataMethod\PsClinicalInfo.cs:行号 471
+2015/09/17 16:31:21	Lenovo-PC 	127.0.0.1       	ERR	GetReminder                                                 	WebService调用异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.Services.GetClinicalNew(String UserId, DateTime AdmissionDate, DateTime ClinicDate, Int32 Num) 位置 C:\慢病管理\github\WebService\Services.asmx.cs:行号 6589

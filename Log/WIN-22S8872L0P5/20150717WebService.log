@@ -1,0 +1,10 @@
+2015/07/17 12:04:29	genuine.mi	127.0.0.1       	ERR	                                                            	数据库连接失败！ error information : Communication error: Unable to read data from the transport connection: 您的主机中的软件中止了一个已建立的连接。.
+   at InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   at InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   at InterSystems.Data.CacheClient.CacheConnection.Open()
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\Administrator\Desktop\WebService\CommonLibrary\DataConnection.cs:line 51
+2015/07/17 12:04:29	genuine.mi	127.0.0.1       	ERR	PsTask.GetTaskList                                          	数据库操作异常！ error information : Communication error: Unable to read data from the transport connection: 您的主机中的软件中止了一个已建立的连接。.
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\Administrator\Desktop\WebService\CommonLibrary\DataConnection.cs:line 69
+   at WebService.DataMethod.PsTask.GetTaskList(DataConnection pclsCache, String PlanNo) in C:\Users\Administrator\Desktop\WebService\DataMethod\PsTask.cs:line 182
+2015/07/17 12:04:29	genuine.mi	127.0.0.1       	ERR	GetSignInfoByCode                                           	WebService调用异常！ error information : Object reference not set to an instance of an object.
+   at WebService.Services.GetSignInfoByCode(String PatientId, String PlanNo, String ItemCode, Int32 StartDate, Int32 EndDate) in C:\Users\Administrator\Desktop\WebService\Services.asmx.cs:line 11085

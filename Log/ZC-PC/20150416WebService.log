@@ -1,0 +1,2 @@
+2015/04/16 16:09:08	zc-PC     	::1             	ERR	SetPsTask                                                   	WebService调用异常！ error information : 索引超出了数组界限。
+   在 WebService.Services.CreateTask(String PlanNo, String Task, String UserId, String TerminalName, String TerminalIP, Int32 DeviceType) 位置 D:\实验室\慢病管理\WebService\WebService\Services.asmx.cs:行号 6490

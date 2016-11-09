@@ -1,0 +1,26 @@
+2015/06/30 13:35:57	MAC-PC    	127.0.0.1       	ERR	PsBasicInfoDetail.GetPatientBasicInfoDetail                 	数据库操作异常！ error information : [SQLCODE: <-400>:<Fatal error occurred>]
+[Cache Error: <<SUBSCRIPT>GetName+5^Cm.MstType ^Cm.MstTypeD("")>]
+[Location: <SPFetch>]
+   at InterSystems.Data.CacheClient.CacheCommand.ExecuteReaderObject(CommandBehavior behavior, String method)
+   at InterSystems.Data.CacheClient.CacheCommand.ExecuteReader()
+   at WebService.DataMethod.PsBasicInfoDetail.GetPatientBasicInfoDetail(DataConnection pclsCache, String UserId, String CategoryCode) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsBasicInfoDetail.cs:line 214
+2015/06/30 13:35:57	MAC-PC    	127.0.0.1       	ERR	GetPatBasicInfoDtlList                                      	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetPatBasicInfoDtlList(String UserId) in C:\Users\MAC\Desktop\Github\WebService\Services.asmx.cs:line 5351
+2015/06/30 19:43:07	MAC-PC    	127.0.0.1       	ERR	                                                            	数据库连接失败！ error information : Communication error: Unable to read data from the transport connection: 您的主机中的软件中止了一个已建立的连接。.
+   at InterSystems.Data.CacheClient.CacheADOConnection.Open()
+   at InterSystems.Data.CacheClient.CacheConnection.Open(Boolean useCache)
+   at InterSystems.Data.CacheClient.CacheConnection.Open()
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 51
+2015/06/30 19:43:07	MAC-PC    	127.0.0.1       	ERR	PsBasicInfoDetail.GetValue                                  	数据库操作异常！ error information : Communication error: Unable to read data from the transport connection: 您的主机中的软件中止了一个已建立的连接。.
+   at WebService.CommonLibrary.DataConnection.Connect() in C:\Users\MAC\Desktop\Github\WebService\CommonLibrary\DataConnection.cs:line 69
+   at WebService.DataMethod.PsDoctorInfoDetail.GetValue(DataConnection pclsCache, String UserId, String CategoryCode, String ItemCode, Int32 ItemSeq) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\PsDoctorInfoDetail.cs:line 292
+2015/06/30 19:43:07	MAC-PC    	127.0.0.1       	ERR	CmMstDivision.GetName                                       	数据库操作异常！ error information : <UNDEFINED>GetName+13^Cm.MstDivision *Name
+   at InterSystems.Data.CacheClient.CacheConnection.GetCommon()
+   at InterSystems.Data.CacheClient.CacheConnection.MsgRunMethod(Int64 oref, String clsName, String mtdName, CacheMethodSignature s)
+   at InterSystems.Data.CacheClient.CacheConnection.RunClassMethod(String clsName, String mtdName, CacheMethodSignature s)
+   at InterSystems.Data.CacheTypes.CacheObject.RunClassMethodS(CacheConnection conn, String clsName, String mtdName, CacheMethodSignature s)
+   at Cm.MstDivision.GetName(CacheConnection conn, Nullable`1 Type, String Code)
+   at WebService.DataMethod.CmMstDivision.GetName(DataConnection pclsCache, Int32 Type, String Code) in C:\Users\MAC\Desktop\Github\WebService\DataMethod\CmMstDivision.cs:line 55

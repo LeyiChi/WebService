@@ -1,0 +1,8 @@
+2015/04/17 16:55:30	zc-PC     	::1             	ERR	Ps.DrugRecord.GetPsDrugRecord                               	数据库操作异常！ error information : [SQLCODE: <-400>:<Fatal error occurred>]
+[Cache Error: <<UNDEFINED>GetPsDrugRecord+34^Ps.DrugRecord *DrugCode>]
+[Location: <SPFetch>]
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReaderObject(CommandBehavior behavior, String method)
+   在 InterSystems.Data.CacheClient.CacheCommand.ExecuteReader()
+   在 WebService.DataMethod.PsDrugRecord.GetPsDrugRecord(DataConnection pclsCache, String piUserId, String Module) 位置 D:\实验室\慢病管理\WebService\WebService\DataMethod\PsDrugRecord.cs:行号 362
+2015/04/17 16:58:56	zc-PC     	::1             	ERR	GetPatientDrugRecord                                        	WebService调用异常！ error information : 未将对象引用设置到对象的实例。
+   在 WebService.Services.GetPatientDrugRecord(String PatientId, String Module) 位置 D:\实验室\慢病管理\WebService\WebService\Services.asmx.cs:行号 6514

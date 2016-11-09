@@ -1,0 +1,9 @@
+2015/06/25 21:26:50	MAC-PC    	127.0.0.1       	ERR	CmMstLabTestSubItems.GetNameList                            	数据库操作异常！ error information : Not all parameters bound/registered
+   at InterSystems.Data.CacheClient.CacheCommand.ExecuteReaderObject(CommandBehavior behavior, String method)
+   at InterSystems.Data.CacheClient.CacheCommand.ExecuteReader()
+   at WebService.DataMethod.CmMstLabTestSubItems.GetNameList(DataConnection pclsCache) in C:\Users\MAC\Desktop\20150625CDMIS\WebService\DataMethod\CmMstLabTestSubItems.cs:line 193
+2015/06/25 21:26:50	MAC-PC    	127.0.0.1       	ERR	GetLabTestSubItemNameList                                   	WebService调用异常！ error information : 'table' argument cannot be null.
+Parameter name: table
+   at System.Data.DataTableCollection.BaseAdd(DataTable table)
+   at System.Data.DataTableCollection.Add(DataTable table)
+   at WebService.Services.GetLabTestSubItemNameList() in C:\Users\MAC\Desktop\20150625CDMIS\WebService\Services.asmx.cs:line 4155
